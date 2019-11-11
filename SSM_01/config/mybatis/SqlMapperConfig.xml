@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <!-- 别名配置 -->
+    <typeAliases>
+        <!-- 扫描包，批量配置别名，别名为类名 -->
+        <package name="com.hopu.ssm.model"/>
+    </typeAliases>
+    <!-- 交给Spring管理，可以不配置，applicationContext.xml文件去扫描 -->
+    <mappers>
+        <package name="com.hopu.ssm.mapper"/>
+    </mappers>
+</configuration>
